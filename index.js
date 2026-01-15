@@ -7,6 +7,18 @@ const port = process.env.PORT
 const express = require('express')
 const app = express()
 
+const github={
+    name:"bhagyashree",
+    surname:"pawar",
+    mobile:"8329182122"
+}
+
+///route /github
+//how to send json data using res.json()
+app.get("/github",(req,res)=>
+{
+    res.json(github)
+})
 //receive requests from browser
 //route for http://localhost:4000/instagram
 app.get('/instagram', (req, res) => {
